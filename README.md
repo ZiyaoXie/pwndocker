@@ -1,11 +1,13 @@
 Pwndocker
 =========
-A docker environment for pwn in ctf based on **phusion/baseimage:master-amd64**, which is a modified ubuntu 20.04 baseimage for docker
+A docker environment for pwn in ctf based on **phusion/baseimage:master-amd64**, which is a modified ubuntu 20.04 baseimage for docker.
+
+Forked from [Pwndocker](https://github.com/skysider/pwndocker).
 
 ### Usage
 
 ```Shell
-$ docker run -d --rm -h pwn --name pwn -v $(pwd)/pwn:/ctf/work -p 23946:23946 --cap-add=SYS_PTRACE skysider/pwndocker
+$ docker run -d --rm -h pwn --name pwn -v $(pwd)/pwn:/ctf/work -p 23946:23946 --cap-add=SYS_PTRACE wml5yw8gwgll/pwndocker
 $ docker exec -it pwn /bin/bash
 ```
 
